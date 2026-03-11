@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Logo from "@/components/logo";
+
 
 export default async function Page() {
   return (
@@ -32,11 +32,11 @@ export default async function Page() {
         </div>
 
         <div className="flex justify-center !my-10">
-          <Logo />
+
         </div>
 
       </div>
-    </div>  
+    </div>
   );
 
 };

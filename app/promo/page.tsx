@@ -1,9 +1,6 @@
 "use client";
 
-import Logo from "@/components/logo";
-import Button from "@/components/button";
-import Balance from "@/components/balance";
-import Confetti from "@/components/confetti";
+
 import { useState } from "react";
 import { useLayer } from "@/context/layer-provider";
 import { CheckCheck, Loader2 } from "lucide-react";
@@ -35,8 +32,6 @@ export default function Page() {
       </div>
       <div className="flex flex-col w-full text-sm max-w-xl gap-6 px-5 py-6">
         <div className="flex justify-between items-center">
-          <Logo />
-          <Balance start={0} end={213} />
         </div>
         <div className="flex flex-col text-center rounded-3xl bg-gradient-to-t appear border-t gap-6 px-6 py-7 -mb-5 from-gray-100 to-white border-gray-300">
           <span className="text-lg sm:text-xl font-semibold tracking-tight">
@@ -60,10 +55,10 @@ export default function Page() {
           </div>
           <div>
             <a href={promoLink} className="w-full">
-              <Button
+              <button
                 onClick={handleClick}
                 disabled={active}
-                className="pulse p-5 bg-gradient-to-b from-green-500 to-green-600 hover:from-green-400 hover:to-green-500"
+                className="pulse flex w-full justify-center items-center gap-2 rounded-xl text-white font-bold p-5 bg-gradient-to-b from-green-500 to-green-600 hover:from-green-400 hover:to-green-500"
               >
                 {active ? (
                   <Loader2 className="size-4 animate-spin" />
@@ -71,12 +66,12 @@ export default function Page() {
                   <CheckCheck className="size-5" />
                 )}
                 <span>I WANT TO ENJOY IT!</span>
-              </Button>
+              </button>
             </a>
           </div>
         </div>
       </div>
-      <Confetti />
+
     </>
   );
 
