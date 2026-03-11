@@ -1,6 +1,5 @@
 "use client";
 
-import Button from "@/components/button";
 import Comments from "@/components/comments";
 import VSLBlackAmz from "@/components/videos/vsl-black-amz";
 import { useLayer } from '@/context/layer-provider';
@@ -143,12 +142,12 @@ export default function Page() {
 
           {visible && (
             <div className="animate-fade-in-up mt-2">
-              <Button
+              <button
                 onClick={() => {
                   window.location.href = frontLink;
                 }}
                 disabled={active}
-                className="!w-full !rounded-xl !bg-[#34A853] !text-white !font-bold !text-base !py-4 !shadow-green-200 !shadow-lg hover:!translate-y-[-2px] hover:!shadow-xl transition-all uppercase tracking-wide flex items-center justify-center gap-2"
+                className="w-full rounded-xl bg-[#34A853] text-white font-bold tracking-wide uppercase shadow-lg shadow-green-200 py-4 transition-all hover:-translate-y-[2px] hover:shadow-xl flex items-center justify-center gap-2"
               >
                 {active ? (
                   <Loader2 className="size-5 animate-spin" />
@@ -156,7 +155,7 @@ export default function Page() {
                   <CheckCheck className="size-5" />
                 )}
                 <span>UNLOCK WITHDRAWAL NOW</span>
-              </Button>
+              </button>
             </div>
           )}
 

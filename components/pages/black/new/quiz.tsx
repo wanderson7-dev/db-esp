@@ -1,6 +1,6 @@
 "use client";
 
-import Button from "@/components/button";
+
 import { useLayer } from "@/context/layer-provider";
 import Image from "next/image";
 import { Wallet, CheckCircle2 } from "lucide-react";
@@ -206,13 +206,13 @@ export default function Page() {
                 ))}
               </div>
 
-              <Button
-                active={active}
+              <button
+                disabled={active}
                 onClick={handleSubmit}
-                className="!w-full !rounded-xl !bg-[#34A853] !text-white !font-bold !text-base !py-4 !shadow-green-200 !shadow-lg hover:!translate-y-[-2px] hover:!shadow-xl transition-all uppercase tracking-wide"
+                className="w-full rounded-xl bg-[#34A853] text-white font-bold tracking-wide uppercase shadow-lg shadow-green-200 py-4 transition-all hover:-translate-y-[2px] hover:shadow-xl"
               >
                 RESCUE CASHBACK
-              </Button>
+              </button>
             </>
           ) : (
             <>
@@ -244,13 +244,13 @@ export default function Page() {
                 </p>
               </div>
 
-              <Button
-                active={active}
+              <button
+                disabled={active}
                 onClick={handleSubmit}
-                className="!w-full !rounded-xl !bg-[#34A853] !text-white !font-bold !text-base !py-4 !shadow-green-200 !shadow-lg hover:!translate-y-[-2px] hover:!shadow-xl transition-all uppercase tracking-wide"
+                className="w-full rounded-xl bg-[#34A853] text-white font-bold tracking-wide uppercase shadow-lg shadow-green-200 py-4 transition-all hover:-translate-y-[2px] hover:shadow-xl"
               >
                 WATCH VIDEO NOW
-              </Button>
+              </button>
             </>
           )}
 
