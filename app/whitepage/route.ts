@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 export async function GET() {
-  const html = `<!DOCTYPE html>
+    const html = `<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -194,7 +194,7 @@ export async function GET() {
                     <span class="text-6xl font-bold text-white tracking-tighter">US$ 37,00</span>
                 </div>
 
-                <a href="https://www.checkout-ds24.com/product/667753" class="btn-pulse block w-full bg-brand-green hover:bg-brand-greenHover text-white font-bold py-5 px-8 rounded-xl text-2xl uppercase shadow-lg transition transform hover:-translate-y-1">
+                <a href="https://pay.hotmart.com/Y74495278R" class="btn-pulse block w-full bg-brand-green hover:bg-brand-greenHover text-white font-bold py-5 px-8 rounded-xl text-2xl uppercase shadow-lg transition transform hover:-translate-y-1">
                     Comprar Ahora
                 </a>
 
@@ -226,7 +226,7 @@ export async function GET() {
             </p>
             
             <div class="mt-12 pt-8 border-t border-gray-800 text-xs text-gray-600">
-                <p>&copy; 2025 Grupo Vrd LTDA. Todos los derechos reservados.</p>
+                <p>&copy; 2025. Todos los derechos reservados.</p>
                 <p class="mt-2 mb-4">Descargo de responsabilidad: Este sitio no forma parte del sitio web de Facebook ni de Facebook Inc.</p>
                 
                 <div class="flex justify-center space-x-4">
@@ -256,16 +256,12 @@ export async function GET() {
 
                 <div>
                     <h4 class="font-bold text-indigo-800">1. Empresa / Operador</h4>
-                    <p>Grupo Vrd LTDA</p>
-                    <p>Avenida Tiradentes, 1008, Andar 20, Sala 2005, Cxpst 114</p>
-                    <p>Zona 01, Maringá - PR, CEP 87013-260</p>
-                    <p>Brasil</p>
+                    <p>
                 </div>
 
                 <div>
                     <h4 class="font-bold text-indigo-800">2. Contacto</h4>
                     <p><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5f393e3c712c3a293a31363139301f38323e3633713c3032">[email&#160;protected]</a></p>
-                    <p><strong>Teléfono:</strong> +55 (69) 984XX-XXXX</p>
                 </div>
 
                 <div>
@@ -275,13 +271,13 @@ export async function GET() {
 
                 <div>
                     <h4 class="font-bold text-indigo-800">4. Registro</h4>
-                    <p>CNPJ (Número de Registro): 40.361.483/0001-74</p>
+                    <p>CNPJ (Número de Registro): </p>
                 </div>
 
                 <div>
                     <h4 class="font-bold text-indigo-800">5. Responsable del Contenido</h4>
                     <p>Responsable según el § 18 Abs. 2 MStV:</p>
-                    <p>Grupo Vrd LTDA</p>
+                    <p></p>
                 </div>
                 
                 <div class="mt-6 pt-4 border-t border-gray-200">
@@ -301,9 +297,9 @@ export async function GET() {
 </body>
 </html>`;
 
-  return new NextResponse(html, {
-    headers: {
-      'Content-Type': 'text/html',
-    },
-  });
+    return new NextResponse(html, {
+        headers: {
+            'Content-Type': 'text/html',
+        },
+    });
 }
