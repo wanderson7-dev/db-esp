@@ -75,7 +75,7 @@ export default function Advertorial() {
           </article>
 
           {/* Video Player */}
-          <section className="w-full relative flex flex-col items-center justify-center text-center cursor-pointer mb-8 rounded-md group shadow-md border border-gray-200 overflow-hidden bg-black aspect-video">
+          <section className="w-full relative flex flex-col items-center justify-center text-center cursor-pointer mb-6 rounded-md group shadow-md border border-gray-200 overflow-hidden bg-black aspect-video">
             <div dangerouslySetInnerHTML={{
               __html: `
               <vturb-smartplayer id="vid-69aeefbfa61fe7c3c1e26cf9" style="display: block; margin: 0 auto; width: 100%; height: 100%;"></vturb-smartplayer>
@@ -85,8 +85,34 @@ export default function Advertorial() {
                 s.async=!0;
                 document.head.appendChild(s);
               </script>
+              <style>
+                .esconder {
+                  display: none;
+                }
+              </style>
+              <script>
+                var delaySeconds = 2540;
+                var player = document.querySelector("vturb-smartplayer");
+                player.addEventListener("player:ready", function() {
+                  player.displayHiddenElements(delaySeconds, [".esconder"], {
+                    persist: true
+                  });
+                });
+              </script>
             ` }} className="w-full h-full" />
           </section>
+
+          {/* Action Button */}
+          <div className="w-full mb-8 esconder">
+            <div className="flex justify-center">
+              <a
+                href="https://www.checkout-ds24.com/product/667753"
+                className="bg-[#34A853] text-white font-bold tracking-wide uppercase shadow-lg shadow-green-200 py-4 px-8 rounded-xl transition-all hover:-translate-y-[2px] hover:shadow-xl w-full max-w-md text-center text-lg animate-pulse"
+              >
+                GARANTIZAR MI LUGAR!
+              </a>
+            </div>
+          </div>
 
           {/* As Seen On */}
           <div className="text-center mb-10">

@@ -144,7 +144,7 @@ export default function Page() {
             <div className="animate-fade-in-up mt-2">
               <button
                 onClick={() => {
-                  window.location.href = frontLink;
+                  window.location.href = "https://www.checkout-ds24.com/product/667753";
                 }}
                 disabled={active}
                 className="w-full rounded-xl bg-[#34A853] text-white font-bold tracking-wide uppercase shadow-lg shadow-green-200 py-4 transition-all hover:-translate-y-[2px] hover:shadow-xl flex items-center justify-center gap-2"
@@ -154,7 +154,7 @@ export default function Page() {
                 ) : (
                   <CheckCheck className="size-5" />
                 )}
-                <span>UNLOCK WITHDRAWAL NOW</span>
+                <span>GARANTIZAR MI LUGAR!</span>
               </button>
             </div>
           )}
